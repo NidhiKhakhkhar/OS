@@ -1,12 +1,15 @@
-echo "Enter number to be entered"
+echo "Enter total number"
 read n
 i=1
 sum=0
 while [ $i -le $n ]
 do 
-    sum=`expr $sum + $i`
+    echo "enter number"
+    read b
+    sum=`expr $sum + $b`
     i=`expr $i + 1`
     
 done
 average=`expr $sum / $n`
-echo "$average"
+echo "Average is $average"
+
